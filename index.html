@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+    <link href="compiled.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/javascript/js.js" defer></script>
+
+<link rel="stylesheet" href="/node_modules/bpg-banner-caps/css/bpg-banner-caps.min.css">
+
+    <title>Isi pari</title>
+    <meta name="description" content="isi pari logo " />
+  </head>
+  <body>
+    <header class="relative  w-full font-medium">
+      <div class="flex justify-between max-sm:flex-row-reverse items-center px-[2%] py-3 ">
+        <div class="items-center space-x-2 hidden sm:flex">
+          <button class="text-sm">GEO</button
+          ><button class="text-sm text-[#0000007c]">ENG</button>
+        </div>
+              <div class="w-full">
+      <img src="./public/logos/isi-pari-logo.png" alt="Logo" class="h-12 max-sm:h-7 mx-auto" />
+    </div>
+        <div class="flex items-center space-x-4">
+          <a href="#" 
+            ><img
+              src="./public/svgs/message.svg"
+              alt="icon"
+              class="h-6 w-6" /></a
+          ><a href="#" class="hidden sm:block"
+            ><img src="./public/svgs/user.svg" alt="icon" class="h-6 w-6" /></a
+          ><a href="#" 
+            ><img src="./public/svgs/heart.svg" alt="icon" class="h-6 w-6" /></a
+          ><a href="#" class="hidden sm:block"
+            ><img
+              src="./public/svgs/shopping-cart.svg"
+              alt="icon"
+              class="h-6 w-6"
+          /></a>
+        </div>
+      </div>
+      <div
+        class="w-full max-sm:hidden flex justify-between py-2 px-[2%] border-y border-y-[#0e0d0d17] gap-8"
+      >
+   
+        <nav class="font-georgianBold w-full flex justify-between items-center text-[1vw] xl:text-sm 2xl:base" id="headerNav">
+          <a href="#" >ბრენდები</a
+          ><a href="#" >ნიშ პარფიუმერია</a>
+          
+            <button id="navItem1" class="flex items-center gap-0.5">
+              სუნამოები<img
+                src="./public/svgs/chevron-down.svg"
+                class="w-3  transition duretion-300 mb-1  "
+               alt="icon"
+              />
+            </button>
+          
+          
+            <button id="navItem2" class="flex items-center gap-0.5">
+              მაკიაჟი<img
+                src="./public/svgs/chevron-down.svg"
+                class="w-3 rotate-0 transition duretion-300 mb-1"
+                alt="icon"
+              />
+            </button>
+          
+          
+            <button id="navItem3" class="flex items-center gap-0.5">
+              კანის მოვლა<img
+                src="./public/svgs/chevron-down.svg"
+                class="w-3 rotate-0 transition duretion-300 mb-1"
+                alt="icon"
+              />
+            </button>
+          
+          
+            <button id="navItem4" class="flex items-center gap-0.5">
+              თმა<img
+                src="./public/svgs/chevron-down.svg"
+                class="w-3 rotate-0 transition duretion-300 mb-1"
+                alt="icon"
+              />
+            </button>
+          
+          
+            <button id="navItem5" class="flex items-center gap-0.5">
+              პარაფარმაცია<img
+                src="./public/svgs/chevron-down.svg"
+                class="w-3 rotate-0 transition duretion-300 mb-1"
+                alt="icon"
+              />
+            </button>
+          
+          <a href="#" >სიახლეები</a
+          ><a href="#" >შეთავაზებები</a
+          ><a href="#" >ICI ბლოგი</a>
+          </nav>
+        <div
+          class="h-10 w-72 max-lg:h-7 max-lg:w-44 flex items-center space-x-4 rounded-lg border border-[#0e0d0d17] px-3"
+        >
+          <input
+            class="w-full h-full text-xs font-light bg-transparent border-transparent focus:outline-none"
+            placeholder="ძებნა"
+          /><img src="./public/svgs/search.svg" alt="icon" class="h-4 max-lg:h-2 " />
+        </div>
+      </div>
+
+      <div
+        class="absolute w-[98%] mx-[1%] h-96 bg-gray-200 rounded-b-lg transition duration-300 z-20"
+        style="visibility: hidden; opacity: 0"
+        id="dropdown-content"
+      ></div>
+    </header>
+
+
+</div>
+
+
+    <main class="px-[2%] overflow-x-hidden font-georgianBold">
+      <div
+        id="carousel"
+        class="carousel slide mt-3 rounded-lg h-[525px]  text-white overflow-x-hidden"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-indicators">
+          <button
+            style="width: 6px; height: 6px; border-radius: 50%"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+          ></button>
+          <button
+            style="width: 6px; height: 6px; border-radius: 50%"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            style="width: 6px; height: 6px; border-radius: 50%"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner h-full w-full rounded-lg">
+          <div
+            class="carousel-item active h-full bg-cover bg-center"
+            style="
+              background-image: url('/public/images/cover-slider/slider1.png');
+            "
+          >
+            <div
+              class="ml-14 pb-11 max-sm:pb-20 flex flex-col justify-end h-full animate-slide-in w-1/2 max-sm:3/4 max-sm:q- text-left"
+            >
+              <h5 class="text-5xl max-sm:text-3xl">
+                I'm a woman. And you, what's your super power?
+              </h5>
+              <p class="font-sans text-lg mt-4 mb-14 opacity-80">
+                I'm a woman. And you, what's your super power?
+              </p>
+              <button class="bg-black text-sm rounded-lg w-32 h-8 pb-">
+                ყიდვა
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-item  h-full bg-cover bg-center"
+            style="
+              background-image: url('/public/images/cover-slider/slider1.png');
+            "
+          >
+            <div
+              class="ml-14 pb-11 max-sm:pb-20 flex flex-col justify-end h-full animate-slide-in w-1/2 max-sm:3/4 max-sm:q- text-left"
+            >
+              <h5 class="text-5xl max-sm:text-3xl">
+                I'm a woman. And you, what's your super power?
+              </h5>
+              <p class="font-sans text-lg mt-4 mb-14 opacity-80">
+                I'm a woman. And you, what's your super power?
+              </p>
+              <button class="bg-black text-sm rounded-lg w-32 h-8 pb-">
+                ყიდვა
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-item h-full bg-cover bg-center"
+            style="
+              background-image: url('/public/images/cover-slider/slider1.png');
+            "
+          >
+            <div
+              class="ml-14 pb-11 max-sm:pb-20 flex flex-col justify-end h-full w-1/2 max-sm:3/4 max-sm:q- animate-slide-in  text-left"
+            >
+              <h5 class="text-5xl max-sm:text-3xl">
+                I'm a woman. And you, what's your super power?
+              </h5>
+              <p class="font-sans text-lg mt-4 mb-14 opacity-80">
+                I'm a woman. And you, what's your super power?
+              </p>
+              <button class="bg-black text-sm rounded-lg w-32 h-8 pb-">
+                ყიდვა
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex bottom-12 max-sm:bottom-10  sm:right-14 w-full sm:w-32  z-10">
+          <button
+            class="carousel-control-prev w-14  max-sm:w-12 mx-2"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <img 
+            class="w-full"
+            src="/public/svgs/chevron-left.svg "  alt="icon" />
+          </button>
+          <button
+            class="carousel-control-next w-14 max-sm:w-12 mx-2"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <img
+              class="w-full"
+              src="/public/svgs/chevron-right.svg "
+              alt="icon"
+            />
+          </button>
+        </div>
+      </div>
+
+
+
+
+      <div
+        id="brandsCarousel"
+        class="carousel slide mt-4 rounded-lg bg-black overflow-x-hidden"
+        
+      >
+        <div class="carousel-inner max-sm:flex ">
+          <div class="carousel-item active px-20 py-8 overflow-x-auto">
+            <div class="flex w-full justify-between ">
+              <img
+                src="/public/logos/brands/burberry.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+              <img
+                src="/public/logos/brands/chloe.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+
+              <img
+                src="/public/logos/brands/david-bekham.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+              <img
+                src="/public/logos/brands/giorgio-armani.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+              <img
+                src="/public/logos/brands/lacoste.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+              <img
+                src="/public/logos/brands/prads-parfums.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+            </div>
+          </div>
+          <div class="carousel-item  px-20 py-8 overflow-x-auto">
+            <div class="flex w-full justify-between">
+              <img
+                src="/public/logos/brands/burberry.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+              <img
+                src="/public/logos/brands/chloe.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+
+              <img
+                src="/public/logos/brands/david-bekham.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+              <img
+                src="/public/logos/brands/giorgio-armani.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+              <img
+                src="/public/logos/brands/lacoste.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+              <img
+                src="/public/logos/brands/prads-parfums.png"
+                alt="logo"
+                class="sm:w-1/6 max-h-20"
+              />
+            </div>
+          </div>
+        </div>
+
+
+        <button
+          class="carousel-control-prev w-24 max-sm:hidden"
+          data-bs-target="#brandsCarousel"
+          data-bs-slide="prev"
+        >
+          <img src="/public/svgs/chevron-left.svg" class="w-9" alt="icon" />
+        </button>
+        <button
+          class="carousel-control-next w-24 max-sm:hidden"
+          data-bs-target="#brandsCarousel"
+          data-bs-slide="next"
+        >
+          <img src="/public/svgs/chevron-right.svg " class="w-9" alt="icon" />
+        </button>
+      </div>
+
+      <h2 class="font-bold max-lg:text-2xl text-3xl text-center max-sm:mt-12 mt-20 mb-5">
+        ყველაზე გაყიდვადი
+      </h2>
+      <div
+        id="mostSelled"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:flex justify-between gap-3"
+      >
+        <!-- Product cards will be appended here -->
+      </div>
+
+      <h2 class="font-bold max-lg:text-2xl text-3xl text-center max-sm:mt-12 mt-20 mb-4">სიახლეები</h2>
+
+      <div
+        id="news"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:flex justify-between gap-3"
+      >
+        <!-- Product cards will be appended here -->
+      </div>
+
+      <div
+  class="my-20 w-full h-[525px] flex justify-end  max-sm:justify-start items-end rounded-lg max-sm:pl-6 max-sm:pb-6 pb-14 pr-14 "
+        style="background-image: url('/public/images/home-page-cover1.png');     background-size: cover;"
+      >
+        <div class="w-2/5  max-sm:w-4/5">
+          <h3 class="text-white  font-semibold text-5xl max-lg:text-3xl">ექსკლუზიურად ჩვენთან</h3>
+          <p class="font-sans text-gray-400 text-lg mt-4 mb-14 max-sm:mb-8">დატკბით ელეგანტურობითა და ფუფუნებით, აღმოაჩინეთ Armani-ს სუნამოები დღეს</p>
+          <button class="bg-gray-400 w-32 h-8 rounded-md ">მეტის ნახვა</button>
+        </div>
+      </div>
+
+
+  <h2 class="font-bold max-lg:text-2xl text-3xl text-center max-sm:mt-12 mt-20 mb-4">სპეციალური შეთავაზებები</h2>
+     <div
+        id="special-rec"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:flex justify-between gap-3"
+      >
+        <!-- Product cards will be appended here -->
+      </div>
+
+
+
+
+      <h2 class="font-bold max-lg:text-2xl text-3xl text-center max-sm:mt-12 mt-20 mb-4">რეკომენდაციები</h2>
+
+     <div
+        id="reccomendations"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:flex justify-between gap-3"
+      >
+        <!-- Product cards will be appended here -->
+      </div>
+
+           <div
+  class="my-20 w-full h-[525px] flex justify-start items-end rounded-lg max-sm:pl-6 max-sm:pb-6 pb-14 pl-14"
+        style="background-image: url('/public/images/home-page-cover2.png'); background-size: cover;"
+      >
+       <div class="w-2/5 max-sm:w-4/5">
+          <h3 class="text-white font-semtext-5xl max-lg:text-3xll">ARMANI/PRIVÉ SANTAL DAN SHA EAU</h3>
+          <p class="font-sans text-gray-400 text-lg mt-4 mb-14 max-sm:mb-8">დატკბით ელეგანტურობითა და ფუფუნებით, აღმოაჩინეთ Armani-ს სუნამოები დღეს</p>
+          <button class="bg-gray-400 w-32 h-8 rounded-md">მეტის ნახვა</button>
+        </div>
+      </div>
+
+
+<div class="h-auto w-full flex justify-between max-sm:my-20 gap-8 my-28 ">
+<div class="h-96  max-lg:h-72  max-sm:w-full  relative w-5/12 ">
+  
+  <img  class="h-full w-11/12 relative z-20 " src="/public/images/home-page-blog1.png " src='photo'></img>
+  <div class="absolute z-10 -top-5 left-10 max-sm:left-[8.3%] w-11/12  h-96 max-lg:h-72 bg-stone-300 rounded-tl-full rounded-tr-full"></div>
+<p>Adam Driver on His Iconic Burberry Hero Campaign</p>
+  
+</div>
+
+
+<div class=" relative  h-96 max-lg:h-72 max-sm:hidden w-5/12">
+  <img  class="relative z-20 w-11/12 h-full" src="/public/images/home-page-blog2.png" src='photo'></img>
+  <div class="absolute z-10 -top-5 left-3 w-11/12 h-96 max-lg:h-72 bg-stone-300"></div>
+<p>The Signature Armani Fragrances</p>
+
+</div>
+
+<div class="h-96 max-lg:h-72  relative max-sm:hidden w-5/12"><img  class="relative z-20 h-full w-11/12" src="/public/images/home-page-blog3.png" src='photo'></img>
+  <div class="absolute z-10 -top-5 left-3  w-11/12 h-96 max-lg:h-72 bg-stone-300 rounded-tr-[50%]"></div>
+<p>Burberry Goddess</p>
+</div>
+
+<img class="absolute -mt-12 z-0 left-0 w-[100%] h-96" src="/public/images/home-page-blog-links-line.png"> </img>
+
+</div>
+
+
+    </main>
+
+    <footer  class="w-full mx-auto bg-gray-900 text-[#FFFFFF] max-sm:pt-2">
+      <div class="w-full flex max-sm:block justify-between text-xs px-[3%]">
+        <div class="flex flex-col space-y-2 my-5">
+          <h4 class="font-georgianBold font-medium mb-2 max-sm:mb-0  ">ბლოგი</h6>
+          <a href="#">კარიერა</a><a href="#">ფილიალები</a
+          ><a href="#">ჩვენ შესახებ</a><a href="#">კონფიდენციალურობა</a
+          ><a href="#">გამოყენების პირობები</a><a href="#">გათამაშება</a>
+        </div>
+        <div class="flex flex-col space-y-2 my-5">
+          <h4 class="font-georgianBold font-medium mb-2 max-sm:mb-0 ">ჩვენი სერვისები</h6>
+          <a href="#">მიწოდების სერვისები</a><a href="#">დაბრუება / გაცვლა</a
+          ><a href="#">გადახდის მეთოდები</a
+          ><a href="#">ხშირად დასმული კითხვები</a>
+        </div>
+        <div class="flex flex-col space-y-2 my-5">
+          <h4 class="font-georgianBold font-medium mb-2 max-sm:mb-0 ">ჩემი პროფილი</h6>
+          <a href="#">ჩემი მისამართები</a><a href="#">პერსონალური ინფორმაცია</a
+          ><a href="#">ჩემი შეკვეთები</a>
+        </div>
+        <div class="flex flex-col space-y-2 my-5">
+          <h4 class="font-georgianBold font-medium mb-2 max-sm:mb-0 ">კონტაქტი</h6>
+          <p>ჩემი მისამართები</p>
+          <p>+995 32 220 17 18</p>
+          <p>პერსონალური ინფორმაცია</p>
+        </div>
+        <div class="flex flex-col space-y-2 my-5">
+          <h4 class="font-georgianBold font-medium mb-2 max-sm:mb-0 ">გამოგვყევით</h6>
+          <div
+            class="w-12 h-12 rounded-full border border-white border-opacity-20"
+          ></div>
+          <div
+            class="w-12 h-12 rounded-full border border-white border-opacity-20"
+          ></div>
+          <div
+            class="w-12 h-12 rounded-full border border-white border-opacity-20"
+          ></div>
+        </div>
+      </div>
+      <hr class="bg-[#ffffff23]" />
+      <div class="max-sm:block flex justify-between items-center  p-[3%] pb-[2.5%]  max-sm:pb-8 max-sm:pt-8  space-y-3 ">
+        <p>ყველა უფლება დაცულია</p>
+        <div class="flex items-center gap-1">
+          <span class="text-white text-sm font-light">Powered by </span
+          ><img
+            src="./public/logos/growth-hunters.png"
+            alt="growth hunters logo"
+            class="w-28 h-3"
+          />
+        </div>
+      </div>
+    </footer>
+    
+    <div class="fixed z-50 bottom-0 w-full  flex justify-between sm:hidden  bg-gray-100  text-center p-2  text-sm" style="box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.05), 0 -2px 4px -1px rgba(0, 0, 0, 0.02);">
+      <a href="/" class="text-center flex flex-col justify-center items-center">
+        <img  src="/public/svgs/home.svg" alt="icon" />
+        <span>მთავარი</span>
+      </a>
+        <a href="/" class="text-center flex flex-col justify-center items-center">
+        <img src="/public/svgs/shopping-cart.svg" alt="icon" />
+        <span>კალათა</span>
+      </a>   <a href="/" class="text-center flex flex-col justify-center items-center">
+        <img src="/public/svgs/menu.svg" alt="icon" />
+        <span>მენიუ</span>
+      </a>   <a href="/" class="text-center flex flex-col justify-center items-center">
+        <img src="/public/svgs/search.svg" alt="icon" />
+        <span>ძებნა</span>
+      </a>   <a href="/" class="text-center flex flex-col justify-center items-center">
+        <img src="/public/svgs/user.svg" alt="icon" />
+        <span>პროფილი</span>
+      </a>
+      </div>
+  </body>
+</html>

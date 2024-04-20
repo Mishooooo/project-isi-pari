@@ -1,0 +1,24 @@
+{
+  "name": "isi-pari",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build": "npx postcss styles.css -o compiled.css",
+    "watch": "npx postcss styles.css -o compiled.css --watch",
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "bpg-banner-caps": "^1.0.0"
+  }
+}
